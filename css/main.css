@@ -1,0 +1,316 @@
+/*
+0 - 600 -> phone
+600 - 900 -> tablets 
+900 - 1200 -> tablet landscape
+1200 - 1800 -> normal style
+1800+ -> big desktop
+1em = 16rem
+
+order: base +  typography > general layout + grid > page layout > components
+
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3EA477; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9EA3B0; }
+
+body {
+  background-color: white;
+  color: #2B313E; }
+
+.mgt18 {
+  margin-top: 18px; }
+
+h1 {
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif; }
+
+h2 {
+  font-size: 35px;
+  font-family: 'Fira Code', monospace;
+  color: white; }
+
+h4 {
+  font-size: 20px;
+  font-family: 'Fira Code', monospace; }
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px; }
+  h2 {
+    font-size: 20px; } }
+
+.green {
+  color: #51CFB6; }
+
+.button {
+  text-decoration: none;
+  color: white;
+  border: 3px solid white;
+  padding: 7px 32px;
+  border-radius: 25px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  transition: all .2s; }
+  .button:hover {
+    background: #3EA477;
+    border: 3px solid #3EA477;
+    transform: scale(1.2); }
+
+.center {
+  text-align: center; }
+
+.section {
+  padding: 120px 90px;
+  max-width: 100vw; }
+
+@media (max-width: 600px) {
+  .section {
+    padding: 80px 30px; } }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px; }
+
+@media (max-width: 1200px) {
+  .container {
+    gap: 30px; } }
+
+@media (max-width: 600px) {
+  .container {
+    gap: 10px;
+    flex-wrap: wrap-reverse; } }
+
+.h2 {
+  font-size: 35px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #2B313E;
+  margin-top: 20px; }
+
+.blue {
+  color: #7398C2; }
+
+.underline {
+  max-width: 280px;
+  height: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #7398C2; }
+
+.mg35 {
+  margin-top: 35px !important; }
+
+.mb80 {
+  margin-bottom: 80px; }
+
+.pink {
+  color: #FF4C68; }
+
+.green {
+  color: #3EA477; }
+
+.header {
+  padding: 250px 0px;
+  background: linear-gradient(300deg, darkviolet, #2d1010);
+  background-size: 100% 100%;
+  animation: gradient 15s ease infinite; }
+
+.header-container {
+  min-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+@media (max-width: 900px) {
+  .header {
+    padding: 200px 0; } }
+
+@media (max-width: 600px) {
+  .header {
+    padding: 100px 0; } }
+
+p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 18px;
+  margin-top: 20px; }
+
+@media (max-width: 600px) {
+  p {
+    font-size: 16px; } }
+
+.container .photo {
+  width: 300px; }
+
+@media (max-width: 1200px) {
+  .container .photo {
+    width: 250px; } }
+
+.services {
+  display: flex;
+  align-items: flex-start; }
+  .services .services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .services .services-container p {
+      width: 65%; }
+    .services .services-container .shortImages {
+      width: 200px; }
+    .services .services-container h3 {
+      font-family: 'Fira Code', monospace;
+      font-size: 35px; }
+
+@media (max-width: 900px) {
+  .services {
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    .services p {
+      width: 40%; }
+    .services .shortImages {
+      width: 100px; } }
+
+@media (max-width: 600px) {
+  .shortImages {
+    width: 40px; } }
+
+@media (max-width: 600px) {
+  .shortImages {
+    width: 80px; } }
+
+.work h1 {
+  margin-bottom: 60px; }
+
+.work-container {
+  display: flex;
+  justify-content: space-around; }
+  .work-container-description {
+    padding-top: 100px;
+    width: 30%; }
+    .work-container-description-languages {
+      display: inline-flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap; }
+      .work-container-description-languages p {
+        background-color: #9EA3B0;
+        border-radius: 3px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        padding: 2px 6px;
+        font-weight: 500;
+        margin: 5px 5px; }
+    .work-container-description a {
+      text-decoration: none; }
+    .work-container-description-button {
+      margin-top: 40px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border: 2px solid #9EA3B0;
+      border-radius: 12px;
+      max-width: 230px;
+      padding: 10px 8px; }
+      .work-container-description-button:hover {
+        background-color: #9EA3B0;
+        color: white; }
+    .work-container-description p {
+      margin-top: 0; }
+  .work-container-img {
+    width: 500px; }
+    .work-container-img img {
+      width: 100%; }
+
+.work-container {
+  margin-bottom: 80px; }
+
+@media (max-width: 900px) {
+  .work-container {
+    flex-wrap: wrap; }
+  .first {
+    order: 0; }
+  .second {
+    order: 1; }
+  .work-container-description {
+    padding-top: 0;
+    width: 100%; }
+  .work-container-img {
+    width: 600; } }
+
+.getInTouch {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto; }
+  .getInTouch img {
+    width: 86px;
+    margin-bottom: 40px; }
+  .getInTouch h2 {
+    color: #2B313E; }
+  .getInTouch .primary-button {
+    margin-top: 40px;
+    text-decoration: none;
+    padding: 16px 50px;
+    border: 2px solid #9EA3B0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    transition: all .2s; }
+    .getInTouch .primary-button:hover {
+      color: #2B313E;
+      background-color: #3EA477;
+      border: 2px solid #3EA477;
+      transform: scale(1.1); }
+
+@media (max-width: 600px) {
+  .getInTouch {
+    width: 80%; } }
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-bottom: 120px;
+  background-color: #9EA3B0; }
+  .contact img {
+    width: 50px;
+    height: 50px; }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
