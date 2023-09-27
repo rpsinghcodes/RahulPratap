@@ -14,7 +14,8 @@
     <meta property="og:image" content="https://rpsinghcodes.github.io/RahulPratap/img/Image.png" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=IBM+Plex+Mono&family=JetBrains+Mono:wght@400;600&family=Poppins:ital,wght@0,600;1,400&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="css/main.css">
     <title>Rahul|WebDeveloper|FreeLancer</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
 </head>
@@ -26,13 +27,13 @@
                 <h2 class="typing-data">Rahul Pratap Singh</h2>
             </div>
             <h1 class="green center">I Design and Build WebPages</h1>
-            <a href="mailto:rahulprataps386@gmail.com" target="_blank" class="button">Email Me</a>
+            <a href="mailto:rahulprataps386@gmail.com" target="_blank" class="button scale">Email Me</a>
         </div>
     </header>
     <section class="section">
         <h1 class="center mb80">A Little <span class="green">About Me</span></h1>
         <div class="container">
-            <div>
+            <div data-aos="fade-right">
                 <h2 class="h2 center">
                     Hey, I'm <span class="blue">Rahul</span>
                 </h2>
@@ -41,7 +42,7 @@
                 <p>I'm a self taught Web Designer and Developer I aspire toward a career that will allow me to channel my creativity through crafting beautiful engaging experiences.</p>
                 <p class="center">When I'm not on the computer, I enjoy Reading books and spending time in gardening.</p>
             </div>
-            <div>
+            <div data-aos="fade-left">
                 <img class="photo" src="img/Image.png" loading="lazy" alt="Rahul Pratap Singh photo">
             </div>
         </div>
@@ -49,17 +50,17 @@
     <section class="section ">
         <h1 class="center mb80">What <span class="green">I Do</span></h1>
         <div class="services">
-            <div class="services-container">
+            <div class="services-container " data-aos="fade-up-right">
                 <img class="shortImages" src="./img/Design.png" alt="Code Images" loading="lazy" />
                 <h3 class="center">Design</h3>
                 <p class="center">I Design UI/UX for Websites and Mobile Application</p>
             </div>
-            <div class="services-container">
+            <div class="services-container " data-aos="fade-up-right">
                 <img class="shortImages" src="./img/Code.png" alt="Code Images" loading="lazy" />
                 <h3 class="center">Code</h3>
                 <p class="center">I Code for WebApplication for both Front-end as well as backend</p>
             </div>
-            <div class="services-container">
+            <div class="services-container" data-aos="fade-up-right">
                 <img class="shortImages" src="./img/SolveProblem.png" alt="Code Images" loading="lazy" />
                 <h3 class="center">Solve Problems</h3>
                 <p class="center">I solve problems for your growing businesses and Startups</p>
@@ -70,7 +71,7 @@
         <h1 class="center mb80">What I Have Done <span class="green">(Latest Work)</span></h1>
 
         <div class="work-container">
-            <div class="work-container-description second">
+            <div class="work-container-description second" data-aos="fade-up-left">
                 <h2 class="pink">TinDog</h2>
                 <div class="work-container-description-languages">
                     <p>HTML5</p>
@@ -87,15 +88,15 @@
                        
                 </a>           
             </div>
-            <div class="work-container-img">
+            <div class="work-container-img" data-aos="fade-up-right">
                 <img src="./img/TinDog.png" alt="TinDog website screenShot" loading="lazy">
             </div>
         </div>
         <div class="work-container">
-            <div class="work-container-img">
+            <div class="work-container-img" data-aos="fade-up-left">
                 <img src="./img/Natours.png" alt="TinDog website screenShot" loading="lazy">
             </div>
-            <div class="work-container-description">
+            <div class="work-container-description" data-aos="fade-up-right">
                 <h2 class="green">Natours</h2>
                 <div class="work-container-description-languages">
                     <p>HTML5</p>
@@ -144,5 +145,9 @@
             <img src="./img/Instagram.svg" alt="Whatsaap logo" loading="lazy" />
         </a>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
