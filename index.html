@@ -146,7 +146,7 @@
         </div>
     </section>
 
-    <section class="section getInTouch">
+    <section class="section getInTouch" data-aos="fade-up">
         <img src="./img/whatsaapsvg.svg" alt="Whatsaap Logo" loading="lazy" />
         <h2>Get In <span class="green">Touch</span></h2>
         <p class="center">Whether you have an idea for a project or just want to chat, feel free to shoot me an message!</p>
@@ -190,7 +190,10 @@
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+                            AOS.init({
+                                delay: 100,
+                                duration: 1000
+                            });
     </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
