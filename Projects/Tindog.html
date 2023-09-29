@@ -17,15 +17,21 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=IBM+Plex+Mono&family=JetBrains+Mono:wght@400;600&family=Poppins:ital,wght@0,600;1,400&family=Roboto:wght@700&display=swap"
         rel="stylesheet">
+        <script type="text/javascript" src="../script/script.js"></script>
     <link rel="stylesheet" href="../css/main.css">
     <title>TinDog</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.svg">
 </head>
 
 <body>
+    <div class="callNow">
+        <ion-icon name="call-outline"></ion-icon>
+        <a href="tel:+917310925237">
+            Call Now</a>
+    </div>
     <div class="navbar">
         <a href="../index.html">
-            <img src="../img/favicon.svg" alt="Home Icon">
+            <img src="../img/favicon.svg" alt="Home Icon" onload="imageLoaded()">
         </a>
         <h1 class="center">TinDog</h1>
         <p class="center">Landing Page for travelers with listed price and services.</p>
@@ -51,21 +57,35 @@
 
     <section class="section contact">
         <a href="mailto:rahulprataps386@gmail.com" target="_blank">
-            <img src="../img/gmail.svg" alt="gmail logo" loading="lazy" />
+            <div class="img">
+                <img src="../img/gmail.svg" alt="gmail logo" loading="lazy" />
+            </div>
         </a>
         <a href="https://wa.me/+917310925237" target="_blank">
+            <div class="img">
             <img src="../img/whatsaaapBlack.svg" alt="Whatsaap logo" loading="lazy" />
+            </div>
         </a>
         <a href="https://www.linkedin.com/in/rahul-pratap-singh-80b640200/" target="_blank">
-            <img src="../img/linkedIN.svg" alt="Whatsaap logo" loading="lazy" /> </a>
+            <div class="img">
+                <img src="../img/linkedIN.svg" alt="Whatsaap logo" loading="lazy" />
+            
+            </div>
+            </a>
         <a href="https://twitter.com/Rpsinghcodes" target="_blank">
+            <div class="img">
             <img src="../img/twitter.svg" alt="Whatsaap logo" loading="lazy" />
+            </div>
         </a>
         <a href="https://www.facebook.com/rpsinghcodes" target="_blank">
+            <div class="img">
             <img src="../img/facebook.svg" alt="Whatsaap logo" loading="lazy" />
+            </div>
         </a>
         <a href="https://www.instagram.com/akarahulp/" target="_blank">
+            <div class="img">
             <img src="../img/Instagram.svg" alt="Whatsaap logo" loading="lazy" />
+            </div>
         </a>
     </section>
 </body>

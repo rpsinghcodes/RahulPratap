@@ -20,6 +20,11 @@
     <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
 </head>
 <body>
+    <div class="callNow">
+        <ion-icon name="call-outline"></ion-icon>
+        <a href="tel:+917310925237">
+            Call Now</a>
+    </div>
     <header class="header">
         <div class="header-container">
             <h4 class="green">Hi My Name is</h4>
@@ -27,13 +32,14 @@
                 <h2 class="typing-data">Rahul Pratap Singh</h2>
             </div>
             <h1 class="green center">I Design and Build WebPages</h1>
-            <a href="mailto:rahulprataps386@gmail.com" target="_blank" class="button scale">Email Me</a>
-        </div>
+            <a href="tel:+917310925237" class="button scale">Call Now!</a>
+            </div>
+            
     </header>
     <section class="section">
         <h1 class="center mb80">A Little <span class="green">About Me</span></h1>
         <div class="container">
-            <div data-aos="fade-right">
+            <div data-aos="fade-up">
                 <h2 class="h2 center">
                     Hey, I'm <span class="blue">Rahul</span>
                 </h2>
@@ -42,7 +48,7 @@
                 <p>I'm a self taught Web Designer and Developer I aspire toward a career that will allow me to channel my creativity through crafting beautiful engaging experiences.</p>
                 <p class="center">When I'm not on the computer, I enjoy Reading books and spending time in gardening.</p>
             </div>
-            <div data-aos="fade-left">
+            <div data-aos="fade-up">
                 <img class="photo" src="img/Image.png" loading="lazy" alt="Rahul Pratap Singh photo">
             </div>
         </div>
@@ -50,17 +56,17 @@
     <section class="section ">
         <h1 class="center mb80">What <span class="green">I Do</span></h1>
         <div class="services">
-            <div class="services-container " data-aos="fade-up-right">
+            <div class="services-container " data-aos="fade-up">
                 <img class="shortImages" src="./img/Design.png" alt="Code Images" loading="lazy" />
                 <h3 class="center">Design</h3>
                 <p class="center">I Design UI/UX for Websites and Mobile Application</p>
             </div>
-            <div class="services-container " data-aos="fade-up-right">
+            <div class="services-container " data-aos="fade-up">
                 <img class="shortImages" src="./img/Code.png" alt="Code Images" loading="lazy" />
                 <h3 class="center">Code</h3>
                 <p class="center">I Code for WebApplication for both Front-end as well as backend</p>
             </div>
-            <div class="services-container" data-aos="fade-up-right">
+            <div class="services-container" data-aos="fade-up">
                 <img class="shortImages" src="./img/SolveProblem.png" alt="Code Images" loading="lazy" />
                 <h3 class="center">Solve Problems</h3>
                 <p class="center">I solve problems for your growing businesses and Startups</p>
@@ -69,9 +75,32 @@
     </section>
     <section class="section work">
         <h1 class="center mb80">What I Have Done <span class="green">(Latest Work)</span></h1>
-
         <div class="work-container">
-            <div class="work-container-description second" data-aos="fade-up-left">
+            <div class="work-container-img" data-aos="fade-up">
+                <img src="./img/photographyStudio.png" alt="TinDog website screenShot" loading="lazy">
+            </div>
+            <div class="work-container-description" data-aos="fade-up">
+                <h2 class="yellow">PhotoGraphy Sutdio</h2>
+                <div class="work-container-description-languages">
+                    <p>HTML5</p>
+                    <p>Sass</p>
+                    <p>Figma</p>
+                    <p>Node js</p>
+                </div>
+                <p class="mg35">A showcase Website for Photographer to showcase their beautiful work.</p>
+                <a href="./Projects/photography.html" target="_blank">
+                    <div class="work-container-description-button yellow">
+                        <p> See This Project </p>
+                        <img src="./img/arrowRightYellow.svg" alt="Right Arrow" loading="lazy">
+                    </div>
+        
+        
+                </a>
+            </div>
+            
+        </div>
+        <div class="work-container">
+            <div class="work-container-description second" data-aos="fade-up">
                 <h2 class="pink">TinDog</h2>
                 <div class="work-container-description-languages">
                     <p>HTML5</p>
@@ -79,7 +108,7 @@
                     <p>Javascript</p>
                 </div>
                 <p class="mg35">A Landing Page for TinDog(Tinder for Dogs) where dogs can find there soulmate</p>
-                <a href="./Projects/Tindog.html">
+                <a href="./Projects/Tindog.html" target="_blank">
                     <div class="work-container-description-button pink first">
                             <p> See This Project </p>    
                             <img src="./img/rightArrow.svg" alt="Right Arrow" loading="lazy">
@@ -88,15 +117,15 @@
                        
                 </a>           
             </div>
-            <div class="work-container-img" data-aos="fade-up-right">
+            <div class="work-container-img" data-aos="fade-up">
                 <img src="./img/TinDog.png" alt="TinDog website screenShot" loading="lazy">
             </div>
         </div>
         <div class="work-container">
-            <div class="work-container-img" data-aos="fade-up-left">
+            <div class="work-container-img" data-aos="fade-up">
                 <img src="./img/Natours.png" alt="TinDog website screenShot" loading="lazy">
             </div>
-            <div class="work-container-description" data-aos="fade-up-right">
+            <div class="work-container-description" data-aos="fade-up">
                 <h2 class="green">Natours</h2>
                 <div class="work-container-description-languages">
                     <p>HTML5</p>
@@ -104,7 +133,7 @@
                     <p>Animation</p>
                 </div>
                 <p class="mg35">Landing Page for travelers with listed price and services.</p>
-                <a href="./Projects/Natours.html">
+                <a href="./Projects/Natours.html" target="_blank">
                     <div class="work-container-description-button green">
                             <p> See This Project </p>    
                             <img src="./img/rightArrowGreen.svg" alt="Right Arrow" loading="lazy">
@@ -128,26 +157,42 @@
 
     <section class="section contact">
         <a href="mailto:rahulprataps386@gmail.com" target="_blank">
-            <img src="./img/gmail.svg" alt="gmail logo" loading="lazy" />
+            <div class="img">
+                <img src="./img/gmail.svg" alt="gmail logo" loading="lazy" />
+            </div>
         </a>
         <a href="https://wa.me/+917310925237" target="_blank">
+            <div class="img">
             <img src="./img/whatsaaapBlack.svg" alt="Whatsaap logo" loading="lazy" />
+            </div>
         </a>
         <a href="https://www.linkedin.com/in/rahul-pratap-singh-80b640200/" target="_blank">
-            <img src="./img/linkedIN.svg" alt="Whatsaap logo" loading="lazy" /> </a>
+            <div class="img">
+                <img src="./img/linkedIN.svg" alt="Whatsaap logo" loading="lazy" />
+            
+            </div>
+            </a>
         <a href="https://twitter.com/Rpsinghcodes" target="_blank">
+            <div class="img">
             <img src="./img/twitter.svg" alt="Whatsaap logo" loading="lazy" />
+            </div>
         </a>
         <a href="https://www.facebook.com/rpsinghcodes" target="_blank">
+            <div class="img">
             <img src="./img/facebook.svg" alt="Whatsaap logo" loading="lazy" />
+            </div>
         </a>
         <a href="https://www.instagram.com/akarahulp/" target="_blank">
+            <div class="img">
             <img src="./img/Instagram.svg" alt="Whatsaap logo" loading="lazy" />
+            </div>
         </a>
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
