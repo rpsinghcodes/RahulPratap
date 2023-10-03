@@ -232,14 +232,12 @@ p {
     justify-content: center;
     padding: 30px 0;
     margin: 0 10px;
-    /* From https://css.glass */
-    /* From https://css.glass */
-    background: rgba(158, 163, 176, 0.51);
+    background: rgba(81, 207, 182, 0.48);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(1.1px);
-    -webkit-backdrop-filter: blur(1.1px);
-    border: 1px solid rgba(158, 163, 176, 0.47); }
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(81, 207, 182, 0.36); }
     .services .services-container p {
       width: 65%; }
     .services .services-container .shortImages {
