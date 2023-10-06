@@ -20,12 +20,17 @@
     <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
 </head>
 <body>
+    
     <div class="callNow">
         <ion-icon name="call-outline"></ion-icon>
         <a href="tel:+917310925237">
             Call Now</a>
     </div>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
     <header class="header">
+        
         <div class="header-container">
             <h4 class="green">Hi My Name is</h4>
             <div class="typing-container">
@@ -191,5 +196,16 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
+</script>
 </body>
 </html>
