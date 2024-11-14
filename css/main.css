@@ -77,6 +77,12 @@ h4 {
   box-shadow: 4px 4px #FF4C68 !important;
   color: #FF4C68 !important; }
 
+  .light-pink-box {
+    border: 2px solid #be123c !important;
+    box-shadow: 4px 4px #be123c !important;
+    color: #be123c !important; 
+  }
+
 .green-box {
   border: 2px solid #3EA477 !important;
   box-shadow: 4px 4px #3EA477 !important;
